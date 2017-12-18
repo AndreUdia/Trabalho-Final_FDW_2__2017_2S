@@ -1,0 +1,108 @@
+li{
+	margin: 0;
+    padding: 0;
+	text-decoration: underline;
+	list-style: none;
+}
+#menu1,#menu2{
+	list-style: none;
+}
+
+footer{
+	display: block;
+	margin-top: 30px;
+}
+
+img{
+	height: 80px;
+	width: 25%;
+	margin-top: 15px;
+	display: block;
+	border: 1px dotted lightblue;
+	border-radius: 15px;
+	margin-left: 15%;
+}
+
+.col-sm-3{
+	border-left: 1px solid lightblue;
+	border-right: 1px solid lightblue;
+	margin-top: 10px;
+}
+
+.col-sm-6{
+	margin-top: 10px;
+}
+
+h1{
+	text-align: center;
+	background-image: linear-gradient(to right,yellow,aqua);
+	padding: 10px;
+	color: grey;
+}
+
+body{
+	font-family: "URW Chancery L", cursive;
+}
+
+#conteudo{
+	margin-top: 35px;
+}
+
+#box1, #box2, #box3{
+	margin-top: 10px;
+}
+
+input[type="submit"]{
+	margin-right: 50px;
+	margin-top: 20px;
+	border: 1px dotted blue;
+	float: right;
+}
+
+.arrumaBtn{
+	border-radius: 10px;
+	background-color: lightyellow;
+}
+
+input, select{
+	margin-top: 10px;
+	margin-left: 3px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+form laber{
+	float: left;
+}
+
+.col-sm-3>p{
+	border-bottom: 1px solid lightblue;
+	padding-bottom: 15px;
+}
+
+#cadastrar{
+	height: 160px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#chegou{
+	font-size: large;
+	margin-top: 15px;
+}
+
+h3{
+	padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

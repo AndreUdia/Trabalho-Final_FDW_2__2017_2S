@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+</head>
+<body>
+	<h1>Desafio Javascript</h1>
+	<div class="container-fluid">
+	<div class="row">
+    <div class="col-sm-3 coluna1" >
+		
+		<ul id="menu1">
+			<li>Tecnologias Usadas Neste Site
+				<ul>
+					<li>Jquery</li>
+					<li>Javascript</li>
+					<li>CSS</li>
+					<li>HTML</li>
+				</ul>
+			</li>
+		</ul>
+		<ul id="menu2">
+			<li>Links Relacionados
+				<ul>
+					<li><a href="https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/JavaScript_basico">Tutorial Javascrip</a></li>
+					<li><a href="https://imasters.com.br/front-end/jquery/navegando-no-dom-jquery/?trace=1519021197&source=single">Principais DOM Elementos Jquery</a></li>
+					<li><a href="http://tableless.github.io/iniciantes/manual/js/">Javascript para iniciantes</a></li>
+					<li><a href="https://www.w3schools.com/css/">Basico do CSS no W3Schools</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+		<div id="conteudo">
+			<img id="abrir" src="img/jquery.png" alt="jquery"/></span>
+			<img src="img/javascript.jpg" alt="jquery"/>
+			<img src="img/css.png" alt="jquery"/>
+			<img src="img/html.png" alt="jquery"/>
+		</div>
+    </div>
+    <div class="col-sm-6">
+		<h3>Cadestre no formulário para acessar o desafio!</h3>
+		<form id="formulario">
+			<div id="box1">
+				<label for="nome">Nome: </label>
+				<input type="text" name="nome" required="required"><span id="errNome"></span><br>
+				<label for="nome">CPF: </label>
+				<input type="text" name="cpf"><span></span><br>
+				<label for="genero">Genero: </label>
+				<select name"genero">
+					<option value="masculino">Masculino</option>
+					<option value="feminino">Feminino</option>
+				</select>
+			</div>
+			<div id="box2">
+				<label for="dataNasc">Data de Nascinmento: </label>
+				<input type="text" name="dataNasc" title="Carregue os anos de 10 em 10!"> </br>
+				<label for="email">E-mail: </label>
+				<input type="text" name="email" required="required"><span id="errEmail"></span><br>
+				
+				
+			</div>
+			<div id="box3">
+				<label for="usuario">Usuário: </label>
+				<input type="text" name="usuario" required="required" placeholder="Até 8 caracteres"><span></></span><br>
+				<label for="senha1">Senha: </label>
+				<input type="password" name="senha1" placeholder="Mínimo de 4 caracteres" required="required"><span id="errSenhaP"></span><br>
+				<label for="senha2">Repita a Senha: </label>
+				<input type="password" name="senha2" required="required"><span id="errSenha"></span><br>
+			</div>
+			<input type="submit" value="    submeter     ">
+		</form>	
+	</div>
+    <div class="col-sm-3">
+		<h3>Sobre o Autor Deste Site</h3>
+		<p id="sobreMim">Meu nome é André Vasconcelos Souto - estudante do segundo semestre de Sistemas Para Internet na faculdade federal IFTM-Uberlândia Centro - 
+		ingressei na faculdade com o intuito de estar ligado à área de TI - mas fui encantado pela programação, e todas as tecnologias que estamos aprendendo só me faz querer
+		ir mais além. Como não tinha conhecimento de nenhuma linguagem, vem sendo um desafio constante e prazeroso aprendê-las.
+		</p>
+		<div id="cadastrar">
+			<div>
+				<p></p>
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div>
+				<a href="quest.html" id="chegou"> Acessar o Questionário para o Desafio</a>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<footer>
+	</footer>
+	
+	<div id="dialogo1" title="Fechar" >
+			<p>jQuery é um framework JavaScript Lançada em 2006, por John Resig, segundo definição consta em seu site, trata-se de uma rápida, pequena e rica em features biblioteca JavaScript.
+			Com o lema "Write less, do more." (escreva menos, faça mais), jQuery revolucionou o desenvolvimento web, sendo presente em inúmeros projetos atualmente. Com jQuery é possível fazer diversos efeitos com poucas linhas e, que custariam dezenas de linhas em JavaScript puro.
+			Alguns recursos oferecidos facilmente pelo jQuery: Seleção e manipulação de elementos HTML, manipulação de CSS, efeitos e animações, navegação pelo DOM, Ajax, eventos. Para usá-lo
+			você precisa inseri-lo na página com as tags script. Você pode fazer o link para uma CDN como a do Google ou fazer o download do framework no seu projeto e linkar direto (vale lembrar que se optar por essa opção, faça o link para a versão minificada).</p>
+	</div>
+	<div id="dialogo2" title="Fechar" >
+			<p>O JavaScript é uma linguagem de programação do lado cliente, ou seja, é processada pelo próprio navegador. Com o JavaScript podemos criar efeitos especiais
+			para nossas páginas na Web, além de podermos proporcionar uma maior interatividade com nossos usuários. O JavaScript é uma linguagem orientada a objetos, ou seja,
+			ela trata todos os elementos da página como objetos distintos, fascilitando a tarefa da programação. Resumindo, o JavaScript é uma poderosa linguagem que deve ser
+			dominada por quem deseja criar páginas Web dinamicas e interativas.</p>
+	</div>
+	<div id="dialogo3" title="Fechar" >
+			<p>Cascading Style Sheets (CSS) é uma "folha de estilo" composta por “camadas” e utilizada para definir a apresentação (aparência) em páginas da internet que adotam
+			para o seu desenvolvimento linguagens de marcação (como XML, HTML e XHTML). O CSS define como serão exibidos os elementos contidos no código de uma página da internet
+			e sua maior vantagem é efetuar a separação entre o formato e o conteúdo de um documento.</p>
+	</div>
+	<div id="dialogo4" title="Fechar" >
+			<p>HTML5 (Hypertext Markup Language, versão 5) é uma linguagem para estruturação e apresentação de conteúdo para a World Wide Web e é uma tecnologia chave da 
+			Internet originalmente proposto por Opera Software.[1] É a quinta versão da linguagem HTML. Esta nova versão traz consigo importantes mudanças quanto ao papel
+			do HTML no mundo da Web, através de novas funcionalidades como semântica e acessibilidade. Possibilita o uso de novos recursos antes possíveis apenas com a 
+			aplicação de outras tecnologias. Sua essência tem sido melhorar a linguagem com o suporte para as mais recentes multimídias, enquanto a mantém facilmente 
+			legível por seres humanos e consistentemente compreendida por computadores e outros dispositivos (navegadores, parsers etc). O HTML5 será o novo padrão para HTML,
+			XHTML, e HTML DOM. Atualmente, está em fase de esboço, porém diversos navegadores já implementam algumas de suas funcionalidades.</p>
+	</div>
+	
+	<script src="js/jquery-3.1.0.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="js/jquery.mask.js"></script>
+	<script>
+	$(document).ready(function(){
+  
+		$("img").attr("title","Clique sobre a imagem para saber mais"); // coloca um título em todas as imagens
+
+		// esconde os menus
+		$("#menu1 li>ul").hide();
+		$("#menu2 li>ul").hide();
+		$("#menu3 li>ul").hide();
+		$("#chegou").hide();
+		
+		// Anima os menus em sanfona						
+		$("#menu1 li").click(function(){$("#menu1 li>ul").toggle(1000)});
+		$("#menu2 li").click(function(){$("#menu2 li>ul").toggle(1000)});
+		$("#menu3 li").click(function(){$("#menu3 li>ul").toggle(1000)});
+		
+		// Animando as imagens jquery,js,css,html
+		$("#dialogo1").dialog({
+            autoOpen: false, // previne que abra automatico
+            modal: true,  // fará com que bloqueie
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            }
+        });
+		
+		$("img:eq(0)").click(function () {
+			var state = true;
+			if (state) {
+				$("#dialogo1").animate({
+				backgroundColor: "purple",
+				color: "white",
+				width: 500
+				}, 1000);
+			}
+			
+		});
+		$("img:eq(0)").click(function () {
+			$("#dialogo1").dialog("open");
+		});
+		
+		$("#dialogo2").dialog({
+            autoOpen: false,
+            modal: true,
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            }
+        });
+		
+		$("img:eq(1)").click(function () {
+			var state = true;
+			if (state) {
+				$("#dialogo2").animate({
+				backgroundColor: "purple",
+				color: "white",
+				width: 500
+				}, 1000);
+			}
+			
+		});
+		$("img:eq(1)").click(function () {
+			$("#dialogo2").dialog("open");
+		});
+		
+		$("#dialogo3").dialog({
+            autoOpen: false,
+            modal: true, 
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            }
+        });
+		
+		$("img:eq(2)").click(function () {
+			var state = true;
+			if (state) {
+				$("#dialogo3").animate({
+				backgroundColor: "purple",
+				color: "white",
+				width: 500
+				}, 1000);
+			}
+			
+		});
+		$("img:eq(2)").click(function () {
+			$("#dialogo3").dialog("open");
+		});
+		
+		$("#dialogo4").dialog({
+            autoOpen: false, 
+            modal: true, 
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            }
+        });
+		
+		$("img:eq(3)").click(function () {
+			var state = true;
+			if (state) {
+				$("#dialogo4").animate({
+				backgroundColor: "purple",
+				color: "white",
+				width: 500
+				}, 1000);
+			}
+			
+		});
+		$("img:eq(3)").click(function () {
+			$("#dialogo4").dialog("open");
+		});
+		// fim do código Animando as imagens jquery,js,css,html  -- poderia usar uma função/mas no teste falhou
+		
+		// jquery ui - datepicker
+		
+		$("#box2 input").filter("[name='dataNasc']").datepicker({
+			changeMonth: true,
+			changeYear: true,
+			monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+			dateFormat: "     dd MM, yy",
+			numberOfMonths: 1,
+			maxDate: 0,
+			minDate: -36500
+		});
+		
+		function validaEmail(email){
+			var regex = /[a-z0-9]{1,}@[a-z0-9]{1,20}\.[a-z]{2,3}(\.[a-z]{2})?/i;
+			var $span = $("#errEmail");
+			if(regex.test(email)){
+				$span.html('');
+				return true;
+			}
+			else{
+				$span.hide();
+				$span.html("Você digitou um e-mail inválido!").css("color","red");
+				$span.slideDown(1000);
+				return false;
+			}
+		}
+		
+		function validaSenha(senha1, senha2){
+			var regex = /^[a-z@0-9$#_]{4,}[a-z@0-9$#_]{0,}$/i
+			var $span = $("#errSenha");
+			var $spanP = $("#errSenhaP");
+			if(!regex.test(senha1)){
+				$span.hide();
+				$spanP.html("Deve conter no mínimo 4 caracteres!").css("color","red");
+				$spanP.animate({
+					left: '250px',
+					fontSize: "1.6em",
+					},1000, function(){}
+				);
+				$spanP.animate({
+					right: '250px',
+					fontSize: "1.3em",
+					},1000, function(){}
+				);
+				$spanP.show();
+				return false;
+			}
+			if(senha1 !== senha2){
+				$spanP.html("");
+				$span.hide();
+				$span.html("A senha não confere!").css("color","red");
+				$span.animate({
+				opacity: 0.75,
+				fontSize: "1.3em",
+				}, 1000, function() {
+				});
+				$span.show();
+				return false;
+			}
+			else{
+				$span.html("");
+				$spanP.html("");
+				return true;
+			}
+		}
+		
+		;
+		var str = "abaa"
+		
+		
+		
+		
+		function validaNome(nome){  
+			var regex = /^[a-z]{2,}[a-z\s]{1,}/i;
+			var $span = $("#errNome");
+			if(!regex.test(nome)){
+				$span.hide();
+				$span.html("Você deve digitar um nome com no mínimo 3 letras").css("color","red");
+				$span.fadeIn(1000);
+				return false;
+			}
+			else{
+				$span.html("");
+				return true;
+			}
+		}
+		
+
+		function limparCampos(){  // função para limpar os campos do formulário
+			$('form input:eq(0)').val("");
+			$('form input:eq(1)').val("");
+			$('form input:eq(2)').val("");
+			$('form input:eq(3)').val("");
+			$('form input:eq(4)').val("");
+			$('form input:eq(5)').val("");
+			$('form input:eq(6)').val("");
+		}
+		
+
+		$("#box2 input").filter("[name='dataNasc']").mask(''); // mascara para a data
+		$('form input:eq(1)').mask('000.000.000-00');  // mascara para CPF
+		$('form input:eq(0)').mask('C', {'translation': {C: {pattern: /[a-z\s]/i, recursive: true}}});  // mascara para Nome
+		$('form input:eq(3)').mask('C', {'translation': {C: {pattern: /[a-z@0-9._]/i, recursive: true}}});  // mascara para e-mail
+		$('form input:eq(4)').mask('CCCCCCCC', {'translation': {C: {pattern: /[a-z@0-9$#_]/i}}});  // mascara para Usuário
+		$('form input:eq(5)').mask('CCCCCCCC', {'translation': {C: {pattern: /[a-z@0-9$#_]/i}}});  // mascara para senha
+		$('form input:eq(6)').mask('CCCCCCCC', {'translation': {C: {pattern: /[a-z@0-9#_]/i}}});  // mascara para senha
+		
+		/*function retiraEspaco(str){
+			var temp = "amor amor";
+			temp.replace('a','b');
+			console.log(temp);
+		
+		$('form input:eq(0)').change(function(){
+			var str = $(this).val();
+			str.replace('/[\s]{2,}',' ');
+			console.log(str);
+			var str2 = "amor amor";
+			console.log(str2.replace('a','b'));
+			console.log($(this).val());
+		});}  // pedir auxílio aqui, pois não consegui substituir os espaços com replace e nem com regex. */
+
+		$('input').addClass('arrumaBtn');  //formatando os botões via css externo adicionando uma nova classe enquanto navegação
+		$('select').addClass('arrumaBtn');
+		
+		$("form").submit(function(){
+			var $nome = $("input[name='nome']").val();
+			var $email = $("input[name='email']").val();
+			var $senha1 = $("input[name='senha1']").val();
+			var $senha2 = $("input[name='senha2']").val();
+			var $usuario =  $("input[name='usuario']").val();
+			
+			var testaNome = validaNome($nome);
+			var testaEmail = validaEmail($email);
+			var testaSenha = validaSenha($senha1, $senha2);
+			console.log(testaSenha);
+			
+			if(testaNome && testaEmail && testaSenha){
+				$("#cadastrar div>p").html("Obrigado " + $nome + " , por cadastrar").css('color','blue');
+				$("#cadastrar div>ul>li:eq(0)").html("E-mail: " + $email);
+				$("#cadastrar div>ul>li:eq(1)").html("Usuario: " + $usuario);
+				
+				$("#chegou").show(2000);
+				
+				limparCampos();
+				
+				/*$('form input:eq(0)').val("");
+				$('form input:eq(1)').val("");
+				$('form input:eq(2)').val("");
+				$('form input:eq(3)').val("");
+				$('form input:eq(4)').val(""); // funcionou colocando em uma função limparCampos() !!!
+				$('form input:eq(5)').val("");
+				$('form input:eq(6)').val("");*/ // limpar o formulário por algum motivo está fazendo com que elimine as animações
+			
+				return false;
+			}
+			else{
+				return false;
+			}			
+		});
+	});
+  </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/validaquestionario.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="css/estiloQuest.css" />
+	<style>
+		body{
+			background-image: url('img/fundoForm2.jpg');
+		}
+	</style>
+</head>
+	<body>
+		<h1>Testando os Conhecimentos</h1>
+		<h3>Responda o questionário sobre Javascript, em caso de dúvida, na página de cadastro em Links Relacionados você encontrará sites sobre o assunto</h3>
+		<form id="form1">
+			<fieldset>
+			<legend>Questões Sobre Javascript Básico</legend>
+				<div>
+					<p>Exercício 1 - O que podemos afirmar sobre Javascript:</p>
+					<input type="radio" name="QAOC1" value="a">É destinado para trabalhar somente no lado servidor</br>
+					<input type="radio" name="QAOC1" value="b">É destinado para trabalhar somente no lado cliente</br>
+					<input type="radio" name="QAOC1" value="c">Já não é mais utilizado em criação de página WEB</br>
+					<input type="radio" name="QAOC1" value="d">É uma linguagem de programação para estilo somente</br></br>
+				<div>
+					<p>Exercício 2 - Para acessar um elemento DOM, é necessário:</p>
+					<input type="radio" name="QAOC2" value="a">Que todo o elemento esteja carregado</br>
+					<input type="radio" name="QAOC2" value="b">Só é possível acessar utilizando a linguagem Jquery</br>
+					<input type="radio" name="QAOC2" value="c">Pode se acessar antes do HTML ser montado/estruturado</br>
+					<input type="radio" name="QAOC2" value="d">Fazer a importação no HEAD do arquivo .css</br></br>
+				</div>
+				<div>
+					<p>Exercício 3 - Qual a forma de implementação é a mais rápida:</p>
+					<input type="radio" name="QAOC3" value="a">Utilizar Framework, acelerando assim o trabalho e a execução</br>
+					<input type="radio" name="QAOC3" value="b">Criar um próprio Framework Javascript</br>
+					<input type="radio" name="QAOC3" value="c">Criar todo script sem uso de bibliotecas</br>
+					<input type="radio" name="QAOC3" value="d">Utilizar linguagem Java e converter para Javascript</br></br>
+				</div>
+				<div>
+					<p>Exercício 4 - É possível acessar um banco de dados utilizando apenas Javascript:</p>
+					<input type="radio" name="QAOC4" value="a">Sim, é possível facilmente</br>
+					<input type="radio" name="QAOC4" value="b">É possível utilizando bibliotecas como o AJAX</br>
+					<input type="radio" name="QAOC4" value="c">Javascript já é um banco de dados</br>
+					<input type="radio" name="QAOC4" value="d">Não é possível</br></br>
+				</div>
+				<div>
+					<p>Exercício 5 -É possível utilizar Javascript apenas em aplicações WEB?</p>
+					<input type="radio" name="QAOC5" value="a">Sim, ela foi criada exclusivamente para WEB.</br>
+					<input type="radio" name="QAOC5" value="b">Não, podemos utilizar em aplicativos para celulares e recursos no SO.</br>
+					<input type="radio" name="QAOC5" value="c">Sim, visto que só funciona juntamente com CSS</br>
+					<input type="radio" name="QAOC5" value="d">Não, Javascript pode ser utilizada em qualquer software.</br></br>
+				</div>
+				<div class="verificar">
+					<input type="button" value="Enviar">
+				</div>
+				<div class="limpar">
+					<input type="reset" value="Limpar Campos">
+				</div>
+			</fieldset>
+			<div><p id="dialogo1" title="Fechar"></p></div>
+		</form>
+		<a name="Voltar" class="voltar-ao-topo" href="index.html"><img src="img/volt.png" alt=""/>Voltar ao site Principal</a>
+		<script src="js/jquery-3.1.0.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#dialogo1").dialog({
+					autoOpen: false, // previne que abra automatico
+					modal: true,  // fará com que bloqueie
+					show: {
+					effect: "blind",
+					duration: 1000
+					},
+					hide: {
+					effect: "explode",
+					duration: 1000
+					}
+				});
+				$(".verificar").click(function () {
+					var state = true;
+					if (state) {
+					$("#dialogo1").animate({
+						backgroundColor: "yellow",
+						color: "blue",
+						width: 260
+						}, 1000);
+					}
+			
+				});
+			
+				$(".verificar").click(function(){
+					var quantidadeAcertos = 0;
+					var volta = validar(quantidadeAcertos);
+					console.log(volta);
+					if(volta>2){
+						$("#dialogo1").html(" Você acertou " + volta + " respostas - Parabéns" );
+					}
+					else{
+						$("#dialogo1").html(" Você acertou " + volta + " respostas - Você tem potêncial para acertar mais." );
+					}
+					
+					$("#dialogo1").dialog("open");
+				})
+			});
+		</script>
+	</body>
+</html>
